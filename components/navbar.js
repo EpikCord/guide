@@ -8,9 +8,17 @@ export default function Navbar() {
                     <a href = "/">Home</a>
                 </li>
                 <li>
-                    <a href = "/About">About</a>
+                    <a href = "/getting-started">Getting Started</a>
                 </li>
-
+                <li>
+                    <a href = "/commands">Commands</a>
+                </li>
+                <li>
+                    <a href = "/events">Events</a>
+                </li>
+                <li>
+                    <a href = "/message-components">Message Components</a>
+                </li>
             </ul>
         </div>
     )

@@ -11,10 +11,10 @@
 
 .subheadding {
     text-align: center;
-    animation: invisibleToVisible 1s
+    animation: invisibleToVisible 1.5s
 }
 
 .text {
     padding-left: 10%;
-    animation: invisibleToVisible 3s;
+    animation: invisibleToVisible 2.25s;
 }

@@ -8,11 +8,15 @@ const slashCommandBotCode = `from EpikCord import Client, Intents # Again, what 
 export default function Home() {
     return (
         <html>
+            <body>
+                <title>
+                    EpikCord.py Guide
+                </title>
+            </body>
             <Navbar />
             <div>
                 <h1>EpikCord Guide</h1>
                 <p className = {styles.subheadding}> Welcome to the EpikCord Guide! </p>
-
             </div>
  
             <div className = {styles.text}>
@@ -22,7 +26,6 @@ export default function Home() {
                 <p>TL;DR, the most basic bot uses the following code: {CodeBlock(messageCommandBotCode)}</p>
                 <p>For Slash Commands, you can use {CodeBlock(slashCommandBotCode)}</p>
             </div>
- 
         </html>
     )
 }
