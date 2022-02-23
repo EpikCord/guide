@@ -8,15 +8,6 @@ ul {
   align-items: center;
 }
 
-@keyframes invisibleToVisible{
-  from {
-      opacity: 0;
-  }
-
-  to {
-      opacity: 1;
-  }
-}
 
 
 html {
@@ -27,10 +18,20 @@ p {
   color: #f2f2f2;
 }
 
+@keyframes enlarge {
+  from {
+    transform: scale(0.01);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
 h1 {
   text-align: center;
   color: #f2f2f2;
-  animation: invisibleToVisible 1s;
+  animation: enlarge .5s;
 }
 
 a {
