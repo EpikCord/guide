@@ -7,7 +7,6 @@ export default function CodeBlock(code) {
       <CopyBlock
       text= {code}
       language='python'
-      showLineNumbers='true'
       wrapLines
       theme={railscast}
     />
