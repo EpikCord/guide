@@ -1,9 +1,10 @@
+import styles from "../styles/Codeblock.module.css";
 import React from "react";
 import { CopyBlock, railscast } from "react-code-blocks";
   
 export default function CodeBlock(code) {
   return (
-    <div>
+    <div className = {styles.codeblock}>
       <CopyBlock
       text= {code}
       language='python'

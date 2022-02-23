@@ -4,6 +4,14 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+html {
+  background-color: #5957EB;
+}
+
+ul {
+  align-items: center;
+}
+
 @keyframes invisibleToVisible{
   from {
       opacity: 0;
@@ -14,7 +22,7 @@
   }
 }
 
-title, h1 {
+h1 {
   text-align: center;
   animation: invisibleToVisible 1;
 }
@@ -22,4 +30,8 @@ title, h1 {
 a {
   text-decoration: none;
   color: darkblue;
+}
+
+li {
+  list-style: none;
 }
