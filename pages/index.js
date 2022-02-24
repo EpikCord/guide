@@ -1,3 +1,4 @@
+import Head from "../components/head"
 import Navbar from "../components/navbar"
 import CodeBlock from "../components/codeblock"
 import styles from "../styles/Home.module.css"
@@ -8,24 +9,25 @@ const slashCommandBotCode = `from EpikCord import Client, Intents # Again, what 
 export default function Home() {
     return (
         <html>
+            {Head("EpikCord.py Guide - Getting Started", "Want to get started? Read this!")}
             <body>
                 <title>
                     EpikCord.py Guide
                 </title>
-            </body>
-            <Navbar />
-            <div>
-                <h1>EpikCord Guide</h1>
-                <p className = {styles.subheadding}> Welcome to the EpikCord Guide! </p>
-            </div>
- 
-            <div className = {styles.text}>
-                <p>This guide will help you get started using EpikCord.py as there is no documentation right now.</p>
-                <p>If you have any questions, feel free to contact us on Discord <a target = "blank" href="https://discord.gg/4R473R73kQ">here</a>!</p>
+                <Navbar />
+                <div>
+                    <h1>EpikCord Guide</h1>
+                    <p className = {styles.subheadding}> Welcome to the EpikCord Guide! </p>
+                </div>
+    
+                <div className = {styles.text}>
+                    <p>This guide will help you get started using EpikCord.py as there is no documentation right now.</p>
+                    <p>If you have any questions, feel free to contact us on Discord <a target = "blank" href="https://discord.gg/4R473R73kQ">here</a>!</p>
 
-                <p>TL;DR, the most basic bot uses the following code: {CodeBlock(messageCommandBotCode)}</p>
-                <p>For Slash Commands, you can use {CodeBlock(slashCommandBotCode)}</p>
-            </div>
+                    <p>TL;DR, the most basic bot uses the following code: {CodeBlock(messageCommandBotCode)}</p>
+                    <p>For Slash Commands, you can use {CodeBlock(slashCommandBotCode)}</p>
+                </div>
+            </body>
         </html>
     )
 }
