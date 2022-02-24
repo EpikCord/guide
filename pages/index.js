@@ -9,7 +9,7 @@ const slashCommandBotCode = `from EpikCord import Client, Intents # Again, what 
 export default function Home() {
     return (
         <html>
-            {Head("EpikCord.py Guide - Getting Started", "Want to get started? Read this!")}
+            {Head("EpikCord.py Guide - Home", "The index page for the EpikCord.py guide, come here to navigate the tutorial!")}
             <body>
                 <title>
                     EpikCord.py Guide
