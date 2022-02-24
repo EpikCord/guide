@@ -1,12 +1,14 @@
-export default function Head(pageTitle, pageDescription) {
+import Head from "next/head"
+
+export default function HeadContents(pageTitle, pageDescription) {
     return (
-        <head>
+        <Head>
             <title>
                 {
                     pageTitle
                 }
             </title>
             <meta name="description" content={pageDescription} />
-        </head>
+        </Head>
     )
 }
