@@ -1,6 +1,6 @@
 import styles from "../styles/Codeblock.module.css";
 import React from "react";
-import { CopyBlock, railscast } from "react-code-blocks";
+import { CopyBlock, atomOneDark } from "react-code-blocks";
   
 export default function CodeBlock(code) {
   return (
@@ -9,7 +9,7 @@ export default function CodeBlock(code) {
       text= {code}
       language='python'
       wrapLines
-      theme={railscast}
+      theme={atomOneDark}
     />
     </div>
   );
