@@ -1,5 +1,4 @@
 import styles from "../styles/Codeblock.module.css";
-import React from "react";
 import { CopyBlock, atomOneDark } from "react-code-blocks";
   
 export default function CodeBlock(code) {
