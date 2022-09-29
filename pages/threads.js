@@ -1,11 +1,14 @@
-import head from "../components/head"
+import Head from "../components/Head"
 
 export default function Threads() {
     return (
-        <>
-            <h1>EpikCord.py Guide - Threads</h1>
-            <p>
-
-        </>
-    )
+        <html>
+            <Head pageTitle="EpikCord.py Guide - Threads" pageDescription="This page will teach you about threads." />
+            <body>
+                <p>
+                    Threads are essentially channels within channels which are often within channels. Not all the time though.
+                </p>
+            </body>
+        </html>
+        )
 }
