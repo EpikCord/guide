@@ -79,7 +79,3 @@ a:hover {
     background: white;
     border-radius: 10px;
 }
-
-@media {
-    position: fixed;
-}
