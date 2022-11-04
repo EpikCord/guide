@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="EpikCord_Logo.png">
+    <title>Guide</title>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#what">What is EpikCord?</a></li>
+            <li><a href="#guide">How to use EpikCord?</a></li>
+            <li><a href="https://discord.gg/FHg5BvaDuv" target="https://discord.gg/FHg5BvaDuv">Discord</a></li>
+        </ul>
+    </nav>
+
+    <img src="EpikCord_logo.png" alt="Logo of EpikCord.py" width="10%" height="10%" class="topright">
+
+    <h1 class="center">Complete guide on how to use EpikCord.py</h1>
+
+    <h4 class="center">Welcome to the EpikCord.py Guide</h4>
+
+    <p class="what">
+        If you don't know what EpikCord.py is, it is an Open Source Discord Bot Project.
+        <br><br>
+        It is an API Wrapper for Discord Bots.
+    </p>
+
+    <p class="contribute">
+        Read the <a href="https://gist.github.com/TheUntraceable/28ff8096a40e757124ea2c878a4c76ae">rules</a> for the server <br><br>
+        If you want to contribute, click <a href="https://github.com/EpikCord/EpikCord.py/blob/master/CONTRIBUTING.md" target="https://github.com/EpikCord/EpikCord.py/blob/master/CONTRIBUTING.md">here</a> to know more
+    </p>
+
+    <p class="guide">
+        This is a guide on how to use EpikCord.py as there is no real documentation as of right now
+        <br><br>
+        If you have any doubts, feel free to ask it on our discord(link given above)
+        <br><br>
+        The most basic discord bot uses the following code:-
+        
+        <div class="codeblock">
+            from EpikCord import Client, Intents # Import what we will need <br>
+            client = Client("TOKEN", Intents().all) # Create a Client instance, where token is the token for your Discord Bot, and lazily use all intents <br>
+            <br>
+            @client.event # The decorator that registers event handlers. <br>
+            async def message_create(message): # EpikCord will pass in a parameter with type Message which represents the message sent <br>
+                if message.content == "!hello": # If the message is !hello <br>
+                    await message.channel.send(content="Hello!") # Say hello back otherwise that's rude. <br>
+                    <br>
+            client.login() # Make the client login to Discord.
+        </div>
+
+        <br><br>
+
+        &nbsp; &nbsp; &nbsp; &nbsp; 
+        To implement slash commands, you can use
+        <div class="codeblock">
+            from EpikCord import Client, Intents # Again, what we need.
+            client = Client("TOKEN", Intents().all) # Create a Client instance, where token is the token for your Discord Bot, and lazily use all intents
+            <br>
+            @client.command(<br>
+                name = "ping", # Name the command "ping" and make discord render the command name as "ping"<br>
+                description = "Sometimes reply with 'Pong!'" # Make description for the command for users to read for help <br>
+            ) <br>
+            async def ping(interaction): # EpikCord will pass in a parameter which the type can be ApplicationCommandInteraction, MessageComponentInteraction, AutoCompleteInteraction or ModalInteraction <br>
+            await interaction.reply(content = "Pong!") # Reply to the interaction. All interactions must be acknowledged somehow. Reply is one of them. <br>
+            <br>
+        client.login() # Login to Discord <br>
+    </p>
+</body>
+</html>
